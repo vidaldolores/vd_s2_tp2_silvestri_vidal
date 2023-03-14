@@ -5,14 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marcas y canales</title>
+
+    <style>
+    html {
+        display: flex;
+        justify-content: center;
+    }
+    nav {
+        height: 20%;
+        background-color: antiquewhite;
+        display: flex;
+        justify-content: center;
+    }
+
+    h1 {
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 56;
+    }
+    div.chart {
+        margin-top: 5%;
+        margin-bottom: 5%;
+        border: 1px solid;
+    }
+
+    </style>
+
 </head>
 
 <body>
-<div id='chart'></div>    
-<div id='chart2'></div>    
-
+    <nav><h1>Exploración</h1></nav>
+    <div id='chart' class="chart"></div>    
+    <div id='chart2'class="chart"></div>    
 </body>
-
     <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
     <script src="https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.3.2/iframeResizer.contentWindow.js"></script>
