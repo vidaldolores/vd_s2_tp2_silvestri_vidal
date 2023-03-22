@@ -4,38 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marcas y canales</title>
+    <title>Exploración</title>
 
-    <style>
-    html {
-        display: flex;
-        justify-content: center;
-    }
-    nav {
-        height: 20%;
-        background-color: antiquewhite;
-        display: flex;
-        justify-content: center;
-    }
-
-    h1 {
-        font-family: 'Courier New', Courier, monospace;
-        font-size: 56;
-    }
-    div.chart {
-        margin-top: 5%;
-        margin-bottom: 5%;
-        border: 1px solid;
-    }
-
-    </style>
-
+    <link rel="stylesheet" href="https://unpkg.com/mvp.css@1.12/mvp.css"> 
+    
 </head>
 
-<body>
-    <nav><h1>Exploración</h1></nav>
+<body style="margin: 5rem; display: block;">
+    <h1 class="text-3xl font">
+        Exploración inicial de datos
+    </h1>
+    <br>
     <div id='chart' class="chart"></div>    
-    <div id='chart2'class="chart"></div>    
+    <br>
+    <div id='chart2'class="chart"></div> 
+    <br>
+    <div id='chart3'class="chart"></div>    
+    <br>
+    <div id='chart4'class="chart"></div>    
 </body>
     <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
     <script src="https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6"></script>
