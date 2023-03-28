@@ -1,13 +1,5 @@
 d3.csv('astronautas.csv', d3.autoType).then(data => {
   
-  d2 = Array.from(data).map(ast => {
-    return {
-      ocupacion: ast.ocupacion,
-      genero: ast.genero
-    }
-  });
-
-  console.log(d2)
 
   // Total astronautas por genero
   let chart = Plot.plot({
@@ -50,8 +42,6 @@ d3.csv('astronautas.csv', d3.autoType).then(data => {
   })
 
   // - Horas en mision según nacionalidad 
-
-
   let chart3 = Plot.plot({
     facet: {
       data: data,

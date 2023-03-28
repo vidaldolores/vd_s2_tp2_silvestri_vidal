@@ -1,34 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
-
-    <link rel="stylesheet" href="https://unpkg.com/mvp.css@1.12/mvp.css"> 
-
-
-    <title>TP2</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Exo">
+    <title>TP2</title>  
 </head>
 <body>
-    <div class="container" style="margin: 5rem;">
+    <div class="container">
         <div class="row">
-            <h1>Trabajo Practico 2</h1>
+            <h5>TP 2</h3>
         </div>
         <div class="row">
-            <a class="button" href="exploracion/">Exploracion</a>    
-            <a class="button" href="dataviz_1/">Visualizacion 1</a>    
+            <h1 id="tituloPrincipal">Las profesiones para escapar la tierra</h1>
+        </div>
+        <div class="row" style="height: 2rem;">
+            <svg width="45" height="18" viewBox="0 0 45 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 2L22.5 16L44 2" stroke="white" stroke-width="3" stroke-linejoin="round"/>
+            </svg>
         </div>
         <div class="row">
-            <a class="button" href="dataviz_2/">Visualizacion 2</a>    
-            <a class="button" href="dataviz_3/">Visualizacion 3</a>    
+            <img src="aniamcion.gif" alt="Earth" id="earth">
         </div>
-        <div class="row">
-            <a class="button" href="dataviz_4/">Visualizacion 4</a>    
+        <div class="visualizaciones">
+            <div class="rowImg">
+                <iframe src="dataviz_1/index.html" frameborder="0" width="500" height="500" seamless></iframe>
+                <iframe src="dataviz_2/index.html" frameborder="0" width="500" height="500" seamless></iframe>
+            </div>
+            <div class="rowImg">
+                <iframe src="dataviz_3/index.html" frameborder="0" width="500" height="500" seamless></iframe>
+                <iframe src="dataviz_4/index.html" frameborder="0" width="500" height="500" seamless></iframe>
+            </div>
         </div>
     </div>
 </body>
