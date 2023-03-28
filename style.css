@@ -33,13 +33,23 @@ div.row {
 div.rowImg {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 1rem;
+    grid-gap: 1.5rem;
     align-items: center;
     justify-items: center;
 }
 
 div.visualizaciones {
     padding: 2rem;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-gap: 8rem;
+}
+
+iframe {
+    display: grid;
+    align-items: center;
+    justify-items: center;
 }
 
 #earth {
@@ -64,8 +74,13 @@ div.visualizaciones {
 a {
     text-decoration: none;
     color: #ffffff;
-}
+    border: #474747;
+    border-radius: 10px;
+    background-color: #474747;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 8px;
+    padding-bottom: 8px;
 
-a:hover {
-    color: #00bfff;
+    font-family: "Exo";
 }

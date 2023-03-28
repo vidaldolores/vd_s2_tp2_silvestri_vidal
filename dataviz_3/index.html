@@ -4,12 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marcas y canales</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Exo">
+    <title>VD 3</title>
+    <style>
+        body {
+            font-family: "Exo";
+            background-color: #1f1f1f;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            padding: 5%;
+        }
+
+        h2 {
+            text-align: center;
+        }
+    </style>
+
+
 </head>
 
 <body>
-    <div id='chart' class="chart"></div>    
-
+    <div class="container">
+        <h2>Profesiones y género</h2>
+        <div id='chart' class="chart"></div>    
+    </div>
 </body>
 
     <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>

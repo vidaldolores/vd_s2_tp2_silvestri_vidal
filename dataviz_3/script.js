@@ -14,8 +14,13 @@ d3.csv('astronautas.csv', d3.autoType).then(data => {
             Plot.frame()
         ],
     
-        color: {legend: true, scheme: 'blues'},
-        width: 1200
+        color: {legend: false, scheme: 'blues'},
+        style: {
+          backgroundColor: "1f1f1f",
+          color: "white"
+        },
+        width: 900,
+        height: 400
     })
 
 

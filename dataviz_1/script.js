@@ -8,12 +8,17 @@ d3.csv('astronautas.csv', d3.autoType).then(data => {
           Plot.groupX({y: 'count'}, {x: 'ocupacion', sort:{x: 'y', reverse: true}})  
         )
       ],
+
+      
       x: {grid: false, line: true},
       y: {grid: true, line: false},
-      color: {
-        legend: true,
-        scheme: "blues"
-      },
+
+      style: {
+        backgroundColor: "1f1f1f",
+        scheme: 'blues',
+        color: 'rgb(107, 174, 214)'
+      }
+
     })
 
     d3.select('#chart').append(() => chart)

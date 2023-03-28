@@ -18,8 +18,14 @@ d3.csv('astronautas.csv', d3.autoType).then(data => {
     y: {label: "Ocupacion"},
     x: {grid: true, insetLeft: 50, insetRight: 30},
 
+    style: {
+      backgroundColor: "1f1f1f",
+      scheme: 'blues',
+      color: 'rgb(107, 174, 214)'
+    },
+
     width: 900,
-    height: 300,
+    height: 400,
     marginLeft: 150, 
     insetLeft: 30,
     insetRight: 30
