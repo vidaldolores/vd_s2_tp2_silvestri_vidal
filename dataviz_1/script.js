@@ -9,7 +9,6 @@ d3.csv('astronautas.csv', d3.autoType).then(data => {
 
         ],
 
-
         x: { grid: false, line: true },
         y: { grid: true, line: false, domain: [0, 80] },
 

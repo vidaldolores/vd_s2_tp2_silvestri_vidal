@@ -10,6 +10,7 @@ d3.csv('astronautas.csv', d3.autoType).then(data => {
                     x2: 'max',
                 }, { x: 'edad_mision', y: 'ocupacion' }, ),
             ),
+            Plot.axisY({ lineWidth: 1 }),
         ],
 
         y: { label: "Profesión" },
@@ -23,7 +24,8 @@ d3.csv('astronautas.csv', d3.autoType).then(data => {
 
         width: 900,
         height: 400,
-        marginLeft: 150,
+        marginLeft: 120,
+        marginBottom: 50,
         insetLeft: 30,
         insetRight: 30
     })

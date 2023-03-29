@@ -14,14 +14,15 @@ d3.csv('astronautas.csv', d3.autoType).then(data => {
             legend: true
         },
 
-
         style: {
             backgroundColor: "1f1f1f",
             color: "white"
         },
+        marginLeft: 80,
+        marginTop: 30,
+        marginBottom: 40,
     })
 
     d3.select('#chart').append(() => chart4)
-
 
 })

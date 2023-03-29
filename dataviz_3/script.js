@@ -10,7 +10,7 @@ d3.csv('astronautas.csv', d3.autoType).then(data => {
             Plot.barY(data,
                 Plot.groupX({ y: 'count' }, { x: 'ocupacion', fill: 'ocupacion' })
             ),
-            Plot.axisX({ tickVisible: false }),
+            Plot.axisX({ tickVisible: false, lineWidth: 1 }),
             Plot.frame()
         ],
 
@@ -22,7 +22,8 @@ d3.csv('astronautas.csv', d3.autoType).then(data => {
             color: "white"
         },
         width: 1400,
-        height: 400
+        height: 400,
+        marginBottom: 60
     })
 
 
