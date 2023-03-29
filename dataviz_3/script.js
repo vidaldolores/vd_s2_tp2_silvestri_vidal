@@ -2,24 +2,26 @@ d3.csv('astronautas.csv', d3.autoType).then(data => {
     // - Horas en mision según nacionalidad 
     let chart3 = Plot.plot({
         facet: {
-          data: data,
-          x: 'genero',
+            data: data,
+            x: 'genero',
         },
-    
+
         marks: [
-            Plot.barY(data, 
-              Plot.groupX({y: 'count'}, {x: 'ocupacion', fill: 'ocupacion'})
+            Plot.barY(data,
+                Plot.groupX({ y: 'count' }, { x: 'ocupacion', fill: 'ocupacion' })
             ),
-            Plot.axisX({tickVisible: false}),
+            Plot.axisX({ tickVisible: false }),
             Plot.frame()
         ],
-    
-        color: {legend: false, scheme: 'blues'},
+
+        y: { grid: true, domain: [0, 70] },
+
+        color: { legend: false, scheme: 'blues' },
         style: {
-          backgroundColor: "1f1f1f",
-          color: "white"
+            backgroundColor: "1f1f1f",
+            color: "white"
         },
-        width: 900,
+        width: 1400,
         height: 400
     })
 
